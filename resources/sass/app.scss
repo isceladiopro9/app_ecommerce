@@ -1,0 +1,36 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+.big-padding{
+	padding:30px;
+}
+
+.blue-grey{
+	background:#37474f;
+}
+
+.white-text{
+	color:white;
+}
+
+.table{
+	background-color:white;
+}
+
+.white{
+	background-color:white;
+}
+
+.floating{
+	position:fixed;
+	bottom:2em;
+	right:2em;
+	z-index:100;
+}
