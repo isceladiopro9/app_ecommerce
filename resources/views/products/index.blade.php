@@ -23,7 +23,11 @@
 						<td>{{$product->title}}</td>
 						<td>{{$product->description}}</td>
 						<td>{{$product->pricing}}</td>
-						<td><a class="btn btn-warning" href="{{url('/products/'.$product->id.'/edit')}}">Edit</a></td>
+						<td><a class="btn btn-primary" href="{{url('/products/'.$product->id.'/edit')}}">Edit</a>
+
+						@include('products.delete',['product'=>$product])
+
+						</td>
 					</tr>
 				@endforeach
 			</tbody>

@@ -10002,6 +10002,14 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.no-padding {
+  padding: 0px;
+}
+
+.no-margin {
+  margin: 0px;
+}
+
 .big-padding {
   padding: 30px;
 }
@@ -10027,4 +10035,23 @@ h3 {
   bottom: 2em;
   right: 2em;
   z-index: 100;
+}
+
+.red-text {
+  color: #c83232;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.product {
+  width: 800px;
+  max-width: 100%;
+  padding: 1em;
+  position: relative;
+}
+.product h1 {
+  padding-bottom: 10px;
+  border-bottom: solid 1px;
 }
