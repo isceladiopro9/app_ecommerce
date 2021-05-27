@@ -42,6 +42,15 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
+                        <li>
+                            <a href="">
+                                Mi carrito
+                                <span class="circle-shopping-cart">
+                                    {{$shopping_cart->productsSize()}}
+                                </span>
+                            </a>
+                        </li>
+                        
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">

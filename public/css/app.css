@@ -10055,3 +10055,11 @@ h3 {
   padding-bottom: 10px;
   border-bottom: solid 1px;
 }
+.product .actions {
+  right: 1em;
+  top: 10px;
+}
+
+.absolute {
+  position: absolute;
+}
