@@ -21,17 +21,19 @@ class ShoppingCart extends Model
 
     	}else{
     		//Crear un carrito de compras
-    		return ShoppingCart::createWithoutSssion();
+    		return ShoppingCart::createWithoutSession();
     	}
     }
 
-    public static function findBySession($shoppin_cart_id){
+    public static function findBySession($shopping_cart_id){
     	return ShoppingCart::find($shopping_cart_id);
     }
 
-    public static function createWithoutSssion(){
+    public static function createWithoutSession(){
     	return ShoppingCart::create([
     		'status'=>'incompleted'
     	]);
+
+
     }
 }
