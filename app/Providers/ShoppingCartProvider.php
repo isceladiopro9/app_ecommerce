@@ -4,7 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use App\Models\ShoppingCart;
-
+use Illuminate\Support\Facades\Session;
 
 class ShoppingCartProvider extends ServiceProvider
 {

@@ -10,8 +10,16 @@ class ShoppingCart extends Model
     //use HasFactory;
     protected $fillable = ['status'];
 
+    public function ProductShoppingCarts(){
+    	return $this->hasMay('App\Models\ProductShoppingCart');
+    }
+
+    public function products(){
+    	return $this->belongsToMany('App\Models\Product','product_shopping_carts');
+    }
+
     public function productsSize(){
-    	return $this->id;
+    	return $this->products()->count();
     }
 
     public static function findOrCreateBySessionID($shopping_cart_id){
