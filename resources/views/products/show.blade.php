@@ -25,7 +25,7 @@
  						{{$product->description}}
  					</p>
  					<p>
- 						<a href="" class="btn btn-success">Agregar al carrito</a>
+ 						@include('products_shopping_carts.form',['product'=>$product])
  					</p>
  				</div>
  			</div>	

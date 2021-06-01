@@ -17,9 +17,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',[App\Http\Controllers\MainController::class, 'home']);
 
+Route::get('/carrito',[App\Http\Controllers\ShoppingCartsController::class,'index']);
+
 Auth::routes();
 
 Route::resource('products',App\Http\Controllers\ProductsController::class);
+
+Route::resource('products_shopping_carts',App\Http\Controllers\ProductShoppingCartsController::class,[
+		'only'=>['store','destroy']
+	]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 

@@ -23,6 +23,7 @@ class ShoppingCart extends Model
     }
 
     public static function findOrCreateBySessionID($shopping_cart_id){
+    	
     	if($shopping_cart_id){
     		//Buscar el carito de compras con el ID
     		return ShoppingCart::findBySession($shopping_cart_id);
@@ -44,4 +45,10 @@ class ShoppingCart extends Model
 
 
     }
+
+    public function total(){
+        return $this->products()->sum('pricing');
+    }
+
+
 }

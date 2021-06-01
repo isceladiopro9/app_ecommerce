@@ -44,10 +44,10 @@
                         <!-- Authentication Links -->
 
                         <li>
-                            <a href="">
+                            <a href ="{{url('/carrito')}}">
                                 Mi carrito
                                 <span class="circle-shopping-cart">
-                                    {{$shopping_cart->productsSize()}}
+                                    {{$productCount}}
                                 </span>
                             </a>
                         </li>
